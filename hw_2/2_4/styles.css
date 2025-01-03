@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Fjalla+One&family=Indie+Flower&family=Rubik+Pixels&family=Sedgwick+Ave+Display&display=swap');
+
+
+body {
+
+    font-size: 20px;
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+ul {
+    list-style: none;
+
+}
+
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    padding: 0 20px;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.list {
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    align-items: stretch;
+}
+
+
+.item {
+    padding: 20px;
+    min-height: 200px;
+    flex-direction: column;
+    flex-basis: calc((100% - (5 - 1) * 20px) / 5);
+    background-color: bisque;
+    text-align: center;
+
+}
+
+.rubik {
+    font-family: "Rubik Pixels", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.sedgwick {
+    font-family: "Sedgwick Ave Display", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.dancing-script {
+    font-family: "Dancing Script", serif;
+    font-optical-sizing: auto;
+    /*font-weight 400-700*/
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.fjalla-one {
+    font-family: "Fjalla One", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.indie-flower {
+    font-family: "Indie Flower", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
