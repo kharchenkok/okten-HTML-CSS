@@ -1,0 +1,58 @@
+
+.blog {
+    padding-top: 10%;
+    height: 100%;
+    background-image: linear-gradient(rgb(255, 255, 255) 10%, rgb(150, 145, 83));
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+.list {
+    flex-wrap: wrap;
+    gap: 40px 30px;
+}
+
+.item {
+    flex-direction: column;
+    flex-basis: calc((100% - (3 - 1) * 30px) / 3);
+}
+
+.image-wrapper {
+    height: 220px;
+    width: 100%;
+
+}
+
+.image-wrapper img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.text-wrapper {
+    flex-direction: column;
+}
+
+.button-wrapper {
+    width: 100%;
+    font-size: 16px;
+    color: rgb(103, 101, 101);
+    justify-content: space-evenly;
+}
+
+.button-wrapper p {
+    gap: 10px;
+}
+
+.button-wrapper img {
+    width: 20px;
+    border-radius: 0;
+
+}
+
+
+
+
+
+

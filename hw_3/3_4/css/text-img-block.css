@@ -1,0 +1,46 @@
+/*============text-img section==============================*/
+.text-img {
+    font-size: 20px;
+    background-image: linear-gradient(rgb(255, 255, 255) 10%, rgb(150, 145, 83));
+}
+
+.text-img .container {
+    gap: 30px;
+    justify-content: space-between;
+}
+
+
+.text-img .image-wrapper {
+    flex-basis: 50%;
+    border-radius: 16px;
+
+    padding: 20px;
+    border: 2px solid darkolivegreen;
+}
+
+.text-img .text-wrapper {
+    gap: 30px;
+    flex-basis: 50%;
+    flex-direction: column;
+    align-items: end;
+    text-align: end;
+}
+
+.text-img-revers {
+    background-image: linear-gradient(rgb(150, 145, 83) 40%, rgb(255, 255, 255));
+}
+
+.text-img-revers .container {
+    flex-direction: row-reverse;
+}
+
+.text-img-revers .text-wrapper {
+    align-items: start;
+    text-align: start;
+}
+
+
+
+
+
+

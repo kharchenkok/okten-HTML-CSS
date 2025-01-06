@@ -1,0 +1,155 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: "Lato", serif;
+    font-size: 18px;
+    /*overflow: hidden;*/
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+ul {
+    list-style: none;
+
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    display: block;
+    height: auto;
+    width: 100%;
+    border-radius: 16px;
+}
+
+
+h1, h2, h3 {
+    font-family: "Orbitron", serif;
+    font-optical-sizing: auto;
+}
+
+button {
+    padding: 16px 40px;
+    font-family: inherit;
+    letter-spacing: inherit;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: all 0.3s ease-in-out;
+
+}
+
+button:hover,
+button:focus {
+    transform: scale(1.1);
+    color: #969153;
+    transition: all 0.5s ease-in-out;
+}
+
+a {
+    padding: 20px 0;
+    transition: all 0.3s ease-in-out;
+}
+
+a:hover,
+a:focus {
+    color: #969153;
+    text-decoration: underline;
+    transition: all 0.5s ease-in-out;
+
+}
+
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.container {
+    padding: 0 20px;
+    margin: 0 auto;
+    width: 80%;
+    height: 100%;
+
+}
+
+/*============header====================*/
+
+.page-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    font-size: 14px;
+}
+
+header {
+    font-family: "Orbitron", serif;
+    padding: 20px 0;
+    background-color: white;
+    letter-spacing: 2px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header .container {
+    justify-content: space-between;
+}
+
+header .logo {
+    flex-direction: column;
+    gap: 0;
+    font-weight: bold;
+}
+
+header .logo span {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+nav {
+    padding: 5px;
+    color: #676565;
+}
+
+
+nav a:hover,
+nav a:focus,
+nav a.active {
+    color: #969153;
+    font-weight: bold;
+    text-decoration: underline;
+    transition: all 0.5s ease-in-out;
+
+}
+
+
+.section {
+    padding: 20px 0;
+    height: 100vh;
+
+}
+
