@@ -1,0 +1,258 @@
+:root {
+    --black-color: #1E1E1E;
+    --light-color: #E9E3DC;
+    --accent-color: #D1EF53;
+    --violet-color: #B3A0CD;
+    --border-radius: 30px;
+    --transition: all 300ms ease-in-out;
+
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 139.896%; /* 33.575px */
+    letter-spacing: -0.48px;
+    background-color: var(--black-color);
+}
+
+
+ul {
+    list-style: none;
+}
+
+
+img {
+    display: block;
+    height: auto;
+    width: 100%;
+    /*border-radius: var(--border-radius);*/
+}
+
+button {
+    cursor: pointer;
+    border: none;
+}
+
+h1, h2 {
+    font-family: "Bowlby One", serif;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+
+.back-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 100;
+}
+
+.container {
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.btn {
+    padding-top: 22px;
+    padding-bottom: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Bowlby One", serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--black-color);
+    text-transform: uppercase;
+    line-height: 96.9%; /* 17.441px */
+    transition: var(--transition);
+}
+
+
+.link {
+    padding-left: 35px;
+    padding-right: 35px;
+    text-decoration: none;
+    color: inherit;
+    letter-spacing: normal;
+    transition: var(--transition);
+}
+
+.link:hover,
+.link:focus {
+    transform: scale(1.1);
+    color: var(--accent-color);
+    transition: var(--transition);
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 34px;
+}
+
+.header {
+    padding-top: 36px;
+    padding-bottom: 36px;
+}
+
+.nav-wrapper {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.nav-list {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    justify-content: flex-end;
+    color: var(--light-color);
+}
+
+.header .btn-order {
+    padding-left: 26px;
+    padding-right: 26px;
+    background-color: var(--violet-color);
+}
+
+.section {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.section-title {
+    color: var(--black-color);
+    font-size: 70px;
+
+
+}
+
+.title {
+    width: 100%;
+    max-width: 1255px;
+    color: var(--light-color);
+    text-align: center;
+    font-size: 107px;
+    line-height: 88.9%; /* 95.198px */
+    letter-spacing: -2.142px;
+
+}
+
+.hero {
+    padding-top: 32px;
+    padding-bottom: 16px;
+}
+
+.hero .image-wrapper {
+    width: 700px;
+
+}
+
+/*==============about section=======================*/
+
+.about {
+    padding-top: 16px;
+
+}
+
+.about .content-wrapper {
+    padding: 98px 109px 85px;
+    gap: 28px;
+    align-items: flex-start;
+    background-color: var(--accent-color);
+    border-radius: var(--border-radius);
+}
+
+.about .section-title {
+    max-width: 533px;
+    line-height: 88.9%; /* 62.228px */
+    letter-spacing: -1.4px;
+}
+
+.about .content {
+    max-width: 521px;
+    align-items: flex-start;
+
+}
+
+.about .btn {
+    border: 4px solid var(--black-color);
+    background-color: var(--light-color);
+    box-shadow: 8px 8px 0 0 #000;
+}
+
+.about .btn:hover,
+.about .btn:focus {
+    transform: scale(1.1);
+    color: var(--light-color);
+    background-color: var(--black-color);
+    box-shadow: none;
+    transition: var(--transition);
+}
+
+/*=====================gallery section=======================*/
+.gallery .img-list {
+    flex-wrap: wrap;
+    gap: 64px 40px;
+}
+
+.gallery .img-list .item {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: calc((100% - (2 - 1) * 40px) / 2);
+
+}
+
+.gallery .img-list .item:nth-child(3n) {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 100%;
+}
+
+/*=====================order section=======================*!*/
+.order .section-title {
+    max-width: 895px;
+    text-align: center;
+    color: var(--light-color);
+    line-height: 102%; /* 71.328px */
+}
+
+.order .btn {
+    padding-left: 31px;
+    padding-right: 31px;
+    color: var(--black-color);
+    background-color: var(--accent-color);
+}
+
+.order .btn:hover,
+.order .btn:focus,
+.header .btn-order:hover,
+.header .btn-order:focus {
+    transform: scale(1.1);
+    color: var(--accent-color);
+    box-shadow: 0 0 10px 5px var(--accent-color);
+    background-color: var(--black-color);
+    transition: var(--transition);
+}
+

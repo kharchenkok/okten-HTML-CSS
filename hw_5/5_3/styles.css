@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 100;
+}
+
+nav a {
+    color: white;
+
+    font-size: 20px;
+
+}
+
+.loader {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: darkslateblue;
+}
+
+.loader-content {
+    width: fit-content;
+    font-weight: bold;
+    /*letter-spacing: .4em;*/
+    font-size: 30px;
+    clip-path: inset(0 100% 0 0);
+    animation: appear-animation 2s steps(10) infinite;
+}
+
+.loader-content:before {
+    content: "Loading..."
+}
+
+@keyframes appear-animation {
+    0% {
+        clip-path: inset(0 100% 0 0);
+    }
+    100% {
+        clip-path: inset(0 -1em 0 0);
+    }
+}
+
+
+
+
+
+

@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 100;
+}
+
+nav a {
+    color: white;
+    font-size: 20px;
+
+}
+
+.loader {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkslateblue;
+}
+
+.loader-wrapper {
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    list-style: none;
+}
+
+.item {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    animation: dots 2s ease-in-out infinite;
+    animation-delay: calc(var(--i) * 0.3s);
+}
+
+@keyframes dots {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(2.5);
+    }
+}
