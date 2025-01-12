@@ -3,7 +3,7 @@
     --bg-color: #E9FBEF;
     --text-color: #3e4042;
     --title-color: #065F46;
-    /*--link-color: #EC4899;*/
+    --pink-color: lightpink;
     /*--link-hover-color: #FBCFE8;*/
     /*--accent-color: #FACC15;*/
     --border-radius: 16px;
@@ -39,6 +39,27 @@ a {
 
     text-decoration: none;
     color: inherit;
+}
+
+header {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 100;
+}
+
+nav a {
+    padding: 10px 20px;
+    font-size: 20px;
+    border: 2px solid teal;
+    border-radius: 16px;
+    color: teal;
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: teal;
+    color: white;
 }
 
 
@@ -103,7 +124,7 @@ img {
     width: 100%;
     height: 54px;
     text-align: center;
-    background-color: white;
+    background-color: var(--pink-color);
 
     display: flex;
     align-items: center;
@@ -133,10 +154,3 @@ img {
     align-items: center;
     gap: 20px;
 }
-
-
-
-
-
-
-

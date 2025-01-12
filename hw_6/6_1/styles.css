@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 100;
+}
+
+nav a {
+    padding: 10px 20px;
+    font-size: 20px;
+    border: 2px solid teal;
+    border-radius: 16px;
+    color: teal;
+    transition: all 0.3s ease-in-out;
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: teal;
+    color: white;
+}
+
+section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 20px;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 80%;
+    display: flex;
+
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+
+#block1 > ul > li:nth-child(even) {
+    color: pink;
+}
+
+/*=====================================*/
+#block2 > ul > li:nth-child(odd) {
+    font-size: 22px;
+}
+
+/*=====================================*/
+
+#block3 > ul > li:nth-child(2n+4) {
+    position: relative;
+}
+
+#block3 > ul > li:nth-child(2n+4):after {
+    content: "!";
+    position: absolute;
+    margin-left: 5px;
+    color: red;
+}
+
+/*=====================================*/
+#block4 > ul :last-child {
+    color: purple;
+}
+
+/*=====================================*/
+#block5 > ul > li::first-letter {
+    font-size: 30px;
+    color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+

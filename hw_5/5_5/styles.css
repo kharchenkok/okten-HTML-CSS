@@ -55,6 +55,22 @@ h1, h2 {
     top: 20px;
     left: 20px;
     z-index: 100;
+
+}
+
+.back-btn a {
+    padding: 10px 20px;
+    font-size: 20px;
+    border: 2px solid teal;
+    border-radius: 16px;
+    color: teal;
+    text-decoration: none;
+}
+
+.back-btn a:hover,
+.back-btn a:focus {
+    background-color: teal;
+    color: white;
 }
 
 .container {

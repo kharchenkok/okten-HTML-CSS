@@ -1,0 +1,234 @@
+:root {
+    --green-color: rgb(0 139 139);
+    --light-green: rgb(233 243 243);
+    --text-color: #7c7c7c;
+    --border-radius: 16px;
+    --transition: all 0.3s ease-in-out;
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, serif;
+    background-color: var(--green-color);
+}
+
+ul {
+    list-style: none;
+}
+
+header {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 100;
+}
+
+nav a {
+    padding: 10px 20px;
+    font-size: 20px;
+    border: 2px solid #10678c;
+    border-radius: 16px;
+    color: #10678c;
+    transition: all 0.3s ease-in-out;
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: #10678c;
+    color: white;
+}
+
+section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    height: 100vh
+}
+
+
+.container {
+    margin: 0 auto;
+    max-width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    border: 0;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.form-register {
+
+    width: 40vw;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    background-color: #fff;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+}
+
+
+.form-title {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 40px;
+    text-align: center;
+    background-color: var(--light-green);
+    font-weight: 400;
+
+}
+
+.form-wrapper {
+    padding-bottom: 40px;
+    padding-right: 80px;
+    padding-left: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    color: var(--text-color);
+}
+
+.form-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+}
+
+.form-item {
+    position: relative;
+}
+
+.form-item label {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    transition: var(--transition);
+}
+
+.form-item input {
+    width: 100%;
+    padding: 20px 10px;
+    border: 1px solid var(--text-color);
+    outline: none;
+}
+
+.form-item input:focus {
+    border: 1px solid var(--green-color);
+
+}
+
+.form-item input:focus ~ label,
+.form-item input:not(:placeholder-shown) ~ label {
+    top: -17px;
+    left: 0;
+    font-size: 14px;
+    color: var(--green-color);
+}
+
+.form-item input:not(:placeholder-shown) {
+    color: var(--text-color);
+    font-size: 16px;
+}
+
+.form-submit {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.checkbox-wrapper {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.custom-checkbox {
+    width: 20px;
+    height: 20px;
+    border: 1px solid var(--text-color);
+    transition: all 0.3s ease-in-out;
+    position: relative;
+}
+
+input[type=checkbox]:focus ~ .custom-checkbox {
+    border: 1px solid var(--green-color);
+}
+
+input[type=checkbox]:checked ~ .custom-checkbox::before {
+    content: "\2714";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: var(--green-color);
+    border: 1px solid var(--green-color);
+}
+
+.btn-submit {
+    padding: 10px 40px;
+    background-color: var(--light-green);
+    color: var(--text-color);
+    font-size: 16px;
+    border: 1px solid var(--text-color);
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.btn-submit:hover,
+.btn-submit:focus {
+    background-color: var(--green-color);
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -12,10 +12,17 @@ header {
 }
 
 nav a {
-    color: white;
-
+    padding: 10px 20px;
     font-size: 20px;
+    border: 2px solid teal;
+    border-radius: 16px;
+    color: teal;
+}
 
+nav a:hover,
+nav a:focus {
+    background-color: teal;
+    color: white;
 }
 
 .loader {
