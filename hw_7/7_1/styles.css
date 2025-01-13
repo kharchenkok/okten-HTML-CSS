@@ -1,0 +1,136 @@
+:root {
+    --border-color: #554C4C;
+    --bg-color: rgba(217, 217, 217, 0.30);
+    --text-color: #000;
+    --accent-color: #65856E;
+
+
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    color: var(--text-color);
+    font-size: 20px;
+}
+
+
+header {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 100;
+}
+
+nav a {
+    padding: 10px 20px;
+    font-size: 20px;
+    border: 2px solid teal;
+    border-radius: 16px;
+    color: teal;
+    transition: all 0.3s ease-in-out;
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: teal;
+    color: white;
+}
+
+section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+
+}
+
+
+.container {
+    padding-right: 145px;
+    padding-left: 145px;
+    margin: 0 auto;
+    max-width: 1512px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.card-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 132px;
+}
+
+.card-item {
+    padding: 54px;
+    flex-basis: calc((100% - (3 - 1) * 132px) / 3);
+    position: relative;
+    min-height: 492px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 4px;
+    background-color: var(--bg-color);
+    border: 4px solid var(--border-color);
+}
+
+.card-title {
+    font-size: 40px;
+}
+
+.image-wrapper {
+    padding: 20px 19px;
+    position: absolute;
+    top: -50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border: 4px solid var(--border-color);
+    border-radius: 50%;
+    background-color: #FFF;
+}
+
+.accent {
+    border: 4px solid var(--accent-color);
+}
+
+.accent .image-wrapper {
+    border: 4px solid var(--accent-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
