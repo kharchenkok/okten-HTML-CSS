@@ -22,6 +22,29 @@ img {
     width: 100%;
 }
 
+header {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 100;
+}
+
+nav a {
+    padding: 10px 20px;
+    font-size: 20px;
+    border: 2px solid teal;
+    border-radius: 16px;
+    color: teal;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: teal;
+    color: white;
+}
+
 
 .flex {
     display: flex;

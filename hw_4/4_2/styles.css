@@ -9,10 +9,23 @@
     padding: 0;
 }
 
-nav {
+nav a {
     position: absolute;
     top: 20px;
     left: 20px;
+    z-index: 100;
+    padding: 10px 20px;
+    font-size: 20px;
+    border: 2px solid teal;
+    border-radius: 16px;
+    text-decoration: none;
+    color: teal;
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: teal;
+    color: white;
 }
 
 header,

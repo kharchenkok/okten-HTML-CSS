@@ -12,6 +12,7 @@
     --img-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.25);
     --transition: all 0.3s ease-in-out;
     --card-list-gap: 32px;
+    --card-list-item: 5;
 }
 
 
@@ -206,6 +207,7 @@ h1, h2, h3 {
     border-radius: var(--border-radius);
     box-shadow: var(--img-shadow);
     background-color: var(--decor-bg);
+    overflow: hidden;
 }
 
 .hero-image img {
@@ -249,7 +251,7 @@ h1, h2, h3 {
     display: flex;
     flex-direction: column;
     gap: 3px;
-    flex-basis: calc((100% - (5 - 1) * var(--card-list-gap)) / 5);
+    flex-basis: calc((100% - (var(--card-list-item) - 1) * var(--card-list-gap)) / var(--card-list-item));
 }
 
 .lorem-list {
@@ -323,8 +325,27 @@ h1, h2, h3 {
 }
 
 iframe {
+    display: block;
     width: 100%;
     height: 664px;
+}
+
+footer {
+    padding-top: 35px;
+    padding-bottom: 35px;
+    background-color: var(--section-bg);
+}
+
+footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    line-height: 200%;
+    text-align: center;
+    color: var(--title-color);
+    gap: 32px;
 }
 
 

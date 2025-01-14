@@ -28,6 +28,27 @@ img {
 }
 
 
+.back-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 100;
+    padding: 10px 20px;
+    font-size: 20px;
+    border: 2px solid teal;
+    border-radius: 16px;
+    color: teal;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.back-btn:hover,
+.back-btn:focus {
+    background-color: teal;
+    color: white;
+}
+
+
 .flex {
     display: flex;
     justify-content: center;

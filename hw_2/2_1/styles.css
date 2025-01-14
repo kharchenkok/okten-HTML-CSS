@@ -27,6 +27,25 @@ hr {
 
 }
 
+a {
+    padding: 10px 20px;
+    margin-top: 20px;
+
+    display: inline-block;
+    font-size: 20px;
+    border: 2px solid teal;
+    border-radius: 16px;
+    color: teal;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    background-color: teal;
+    color: white;
+}
+
 .flex {
     display: flex;
     justify-content: center;
