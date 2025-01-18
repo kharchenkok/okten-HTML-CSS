@@ -1,0 +1,206 @@
+:root {
+    --text-color: #7687A1;
+    --title-color: #161543;
+    --card-set-gap-x: 24px;
+    --card-set-gap-y: 32px;
+    --card-set-item: 1;
+    --img-radius: 50%;
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+body {
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    color: var(--text-color);
+    font-size: 16px;
+    line-height: 140%;
+
+}
+
+
+header {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 100;
+}
+
+nav a {
+    padding: 10px 20px;
+    font-size: 20px;
+    border: 2px solid teal;
+    border-radius: 16px;
+    color: teal;
+    transition: all 0.3s ease-in-out;
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: teal;
+    color: white;
+}
+
+section {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+
+}
+
+
+.container {
+    padding-right: 16px;
+    padding-left: 16px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 375px;
+}
+
+.card-list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: var(--card-set-gap-y) var(--card-set-gap-x);
+}
+
+.card-item {
+    flex-basis: calc((100% - (var(--card-set-item) - 1) * var(--card-set-gap-x)) / var(--card-set-item));
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 16px;
+
+
+}
+
+.text-wrapper {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 8px;
+}
+
+.card-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--title-color);
+    letter-spacing: normal;
+    text-transform: capitalize;
+    line-height: 120%;
+}
+
+.image-wrapper {
+    width: 127px;
+    height: 127px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--img-radius);
+    overflow: hidden;
+
+}
+
+@media screen and (min-width: 768px) {
+
+    .card-item {
+        gap: 20px;
+
+    }
+
+    .image-wrapper {
+        width: 160px;
+        height: 160px;
+    }
+
+    .text-wrapper {
+        gap: 10px;
+    }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+    section {
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+
+    .container {
+        padding-right: 24px;
+        padding-left: 24px;
+        max-width: 768px;
+    }
+
+    .card-list {
+        --card-set-gap-y: 40px;
+        --card-set-item: 2;
+    }
+
+    .card-item {
+
+        min-height: 258px;
+    }
+
+}
+
+@media screen and (min-width: 1440px) {
+    section {
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
+
+    .container {
+        padding-right: 48px;
+        padding-left: 48px;
+        max-width: 1440px;
+    }
+
+    .card-list {
+        padding-right: 82px;
+        padding-left: 82px;
+        --card-set-gap-x: 32px;
+        --card-set-item: 4;
+
+    }
+
+    .card-item {
+        min-height: 280px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
